@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/Users/kcms/Sites/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/kcms/Sites/gatsby/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/@reach/router/index.js"), require("fs"), require("/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/Users/kcms/Sites/gatsby/node_modules/@reach/router/index.js", "fs", "/Users/kcms/Sites/gatsby/node_modules/lodash/merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/@reach/router/index.js", "fs", "/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/lodash/merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/Users/kcms/Sites/gatsby/node_modules/@reach/router/index.js"), require("fs"), require("/Users/kcms/Sites/gatsby/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/@reach/router/index.js"), require("fs"), require("/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["/Users/kcms/Sites/gatsby/node_modules/@reach/router/index.js"], root["fs"], root["/Users/kcms/Sites/gatsby/node_modules/lodash/merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/@reach/router/index.js"], root["fs"], root["/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/lodash/merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -118,13 +118,13 @@ var plugins = [{
     "background_color": "#663399",
     "theme_color": "#663399",
     "display": "minimal-ui",
-    "icon": "src/images/gatsby-icon.png",
+    "icon": "src/images/icon.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "4a9773549091c227cd2eb82ccd9c5e3a"
+    "cacheDigest": "fd017f068ded4312bb0d825be93369df"
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
@@ -30727,9 +30727,9 @@ if (false) {} else {
 /***/ }),
 
 /***/ "@reach/router":
-/*!*******************************************************************************!*\
-  !*** external "/Users/kcms/Sites/gatsby/node_modules/@reach/router/index.js" ***!
-  \*******************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** external "/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/@reach/router/index.js" ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -30749,9 +30749,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!************************************************************************!*\
-  !*** external "/Users/kcms/Sites/gatsby/node_modules/lodash/merge.js" ***!
-  \************************************************************************/
+/*!********************************************************************************************!*\
+  !*** external "/Users/kcms/Sites/thecosmicpolygon.github.io/node_modules/lodash/merge.js" ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

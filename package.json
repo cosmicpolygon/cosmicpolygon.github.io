@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "cosmicpolygon.github.io",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Christopher Peters <the.cosmic.polygon@gmail.com>",
   "dependencies": {
+    "@types/react-helmet": "^6.1.0",
     "gatsby": "^2.32.3",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-manifest": "^2.12.0",
@@ -24,7 +25,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "none",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -36,9 +37,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/cosmicpolygon/cosmicpolygon.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/cosmicpolygon/cosmicpolygon.github.io/issues"
   }
 }
