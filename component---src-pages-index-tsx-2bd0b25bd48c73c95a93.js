@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{QeBL:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),c=t("9Dj+"),r=function(){return l.a.createElement("div",null,"Projects")},o=t("H8eV");n.default=function(){return l.a.createElement(c.a,null,l.a.createElement(o.a,{title:"Cosmic Polygon"}),l.a.createElement(r,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-2bd0b25bd48c73c95a93.js.map
