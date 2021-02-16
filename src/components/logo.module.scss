@@ -1,0 +1,53 @@
+@use 'animation' as anim;
+@use 'colors' as color;
+@use 'mixins' as mixins;
+@use 'responsive' as responsive;
+
+$logo-height: 330px;
+$logo-width: 288px;
+
+@mixin piece($file-name) {
+  position: absolute;
+
+  background: url('../images/#{$file-name}.svg');
+  background-size: $logo-width $logo-height;
+  height: $logo-height;
+  transition: all anim.$logo-time ease-out;
+  width: $logo-width;
+}
+
+.container {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  height: $logo-height;
+  width: $logo-width;
+  transform: translate(-50%, -100%);
+
+  &:hover,
+  &:active {
+    .c { transform: translate(-4%, -6%); }
+    .p { transform: translate(4%, 4%); }
+
+    .topShade { transform: translate(0%, -4%); }
+    .leftShade { transform: translate(-4%, 4%); }
+    .rightShade { transform: translate(4%, 4%); }
+    
+    .top { transform: translate(0%, -4%); }
+    .left { transform: translate(-4%, 4%); }
+    .right { transform: translate(4%, 4%); }
+  }
+
+  @media screen and (max-width: responsive.$breakpoint-small) {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.c { @include piece('logo-c'); }
+.p { @include piece('logo-p'); }
+.topShade { @include piece('logo-top-shade'); }
+.leftShade { @include piece('logo-left-shade'); }
+.rightShade { @include piece('logo-right-shade'); }
+.top { @include piece('logo-top'); }
+.left { @include piece('logo-left'); }
+.right { @include piece('logo-right'); }

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
+import Logo from "./logo";
+
 import * as styles from './header.module.scss';
 
 const Header = () => {
@@ -22,7 +24,7 @@ const Header = () => {
 
   return (
     <header className={styles.container} style={{ height }}>
-      <Link className={styles.logo} to="/" />
+      <Logo />
       <Link className={styles.title} to="/">COSMIC POLYGON</Link>
     </header>
   );

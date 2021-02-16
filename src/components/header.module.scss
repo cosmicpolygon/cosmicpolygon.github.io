@@ -1,14 +1,8 @@
 @use 'animation' as anim;
 @use 'colors' as color;
+@use 'mixins' as mixins;
 @use 'responsive' as responsive;
 @use 'typography' as type;
-
-@mixin center($vertical-offset) {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, $vertical-offset);
-}
 
 .container {
   font-family: type.$secondary;
@@ -16,43 +10,19 @@
   text-align: center;
 
   a {
+    color: color.$primary;
     text-decoration: none;
+    transition: all anim.$active-time ease-out;
   }
 
   a:active,
   a:hover {
     color: color.$secondary;
-    transition: color anim.$active-time;
-  }
-}
-
-.logo {
-  $logo-height: 330px;
-  $logo-width: 288px;
-
-  @include center(-100%);
-
-  background: url('../images/logo.svg');
-  background-size: $logo-width $logo-height;
-  height: $logo-height;
-  width: $logo-width;
-
-  @media screen and (max-width: responsive.$breakpoint-medium) {
-    $logo-height: $logo-height * 0.8;
-    $logo-width: $logo-height * 0.8;
-
-    background-size: $logo-width $logo-height;
-    height: $logo-height;
-    width: $logo-width;
-  }
-
-  @media screen and (max-width: responsive.$breakpoint-small) {
-    transform: translate(-50%, -50%);
   }
 }
 
 .title {
-  @include center(25%);
+  @include mixins.center(25%);
 
   $font-size: 6em;
 
@@ -60,9 +30,7 @@
   white-space: nowrap;
 
   @media screen and (max-width: responsive.$breakpoint-medium) {
-    font-size: $font-size * 0.8;
-    white-space: normal; 
-    transform: translate(-50%, 0);
+    white-space: normal;
   }
 
   @media screen and (max-width: responsive.$breakpoint-small) {
