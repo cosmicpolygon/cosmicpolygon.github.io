@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Cosmic Polygon`,
+    title: `Design & Illustration by Christopher Peters`,
     description: `Hello, worlds!`,
     author: `@cosmicpolygon`,
   },
@@ -13,16 +13,23 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass")
+      }
+    },
+    'gatsby-transformer-typescript-css-modules',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Cosmic Polygon | Design & Illustration by Christopher Peters`,
+        short_name: `cosmicpolygon`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#202344`,
+        theme_color: `#cd366f`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

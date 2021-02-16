@@ -1,0 +1,6 @@
+@use 'typography' as type;
+
+.container {
+  font-family: type.$secondary;
+  text-align: center;
+}

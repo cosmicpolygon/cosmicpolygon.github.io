@@ -1,16 +1,20 @@
+@use 'colors' as color;
+@use 'typography' as type;
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
+  background-color: color.$quaternary;
   box-sizing: border-box;
+  font-family: type.$primary;
   overflow-y: scroll;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: color.$primary;
+  font-family: type.$primary;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -50,8 +54,10 @@ progress {
 template {
   display: none;
 }
-a {
+a,
+a:visited {
   background-color: transparent;
+  color: color.$primary;
   -webkit-text-decoration-skip: objects;
 }
 a:active,

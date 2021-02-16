@@ -1,0 +1,44 @@
+@use 'animation' as anim;
+@use 'colors' as color;
+@use 'typography' as type;
+
+@mixin center($vertical-offset) {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, $vertical-offset);
+}
+
+.container {
+  font-family: type.$secondary;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:active,
+  a:hover {
+    color: color.$secondary;
+    transition: color anim.$active-time;
+  }
+}
+
+.logo {
+  $logo-height: 330px;
+  $logo-width: 288px;
+
+  @include center(-100%);
+
+  background: url('../images/logo.svg');
+  background-size: $logo-width $logo-height;
+  height: $logo-height;
+  width: $logo-width;
+}
+
+.title {
+  @include center(25%);
+
+  font-size: 6em;
+  white-space: nowrap;
+}
