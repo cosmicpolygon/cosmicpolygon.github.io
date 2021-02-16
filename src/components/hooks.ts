@@ -1,10 +1,18 @@
 import { useState, useEffect } from 'react';
 
-const getHeight = () => window.innerHeight 
-  || document.documentElement.clientHeight 
-  || document.body.clientHeight;
+const getHeight = (): number => {
+  if (typeof window === `undefined` || typeof document === `undefined`) {
+    return 0;
+  }
 
-export function useCurrentHeight() {
+  return (
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight
+  );
+};
+
+export function useCurrentHeight(): number {
   let [height, setHeight] = useState(getHeight());
 
   useEffect(() => {
@@ -13,8 +21,6 @@ export function useCurrentHeight() {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => setHeight(getHeight()), 256);
     };
-
-    resize();
 
     window.addEventListener('resize', resize);
 
