@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 export function useCurrentHeight(): number {
-  let height;
+  let height: number;
 
   useEffect(() => {
     let timeoutId = null;
