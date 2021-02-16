@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import * as styles from './header.module.scss';
 
 const Header = () => {
-  const [height, setHeight] = useState(9999);
+  const [height, setHeight] = useState(typeof window !== 'undefined' ? window.innerHeight : undefined);
 
   useEffect(() => {
     let timeoutId = null;
@@ -14,13 +14,11 @@ const Header = () => {
     };
 
     window.addEventListener('resize', resize);
-    window.addEventListener('DOMContentLoaded', resize);
 
     return () => {
       window.removeEventListener('resize', resize);
-      window.removeEventListener('DOMContentLoaded', resize);
     }
-  }, [])
+  }, []);
 
   return (
     <header className={styles.container} style={{ height }}>
