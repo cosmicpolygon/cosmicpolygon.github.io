@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{QeBL:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),o=t.n(a),c=t("9Dj+"),i=t("H8eV");n.default=function(){return o.a.createElement(c.a,null,o.a.createElement(i.a,{title:"Cosmic Polygon"}))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-97231c1a939542625af9.js.map
