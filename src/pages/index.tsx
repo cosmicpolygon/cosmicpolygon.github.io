@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 const IndexPage = () => (
   <Layout>
     <SEO title="Cosmic Polygon" />
-    <Projects />
+    {/* <Projects /> */}
   </Layout>
 );
 

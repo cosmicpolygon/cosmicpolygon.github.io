@@ -1,5 +1,6 @@
 @use 'animation' as anim;
 @use 'colors' as color;
+@use 'responsive' as responsive;
 @use 'typography' as type;
 
 @mixin center($vertical-offset) {
@@ -35,11 +36,27 @@
   background-size: $logo-width $logo-height;
   height: $logo-height;
   width: $logo-width;
+
+  @media screen and (max-width: responsive.$breakpoint-medium) {
+    $logo-height: $logo-height * 0.8;
+    $logo-width: $logo-height * 0.8;
+
+    background-size: $logo-width $logo-height;
+    height: $logo-height;
+    width: $logo-width;
+  }
 }
 
 .title {
   @include center(25%);
 
-  font-size: 6em;
+  $font-size: 6em;
+
+  font-size: $font-size;
   white-space: nowrap;
+
+  @media screen and (max-width: responsive.$breakpoint-medium) {
+    font-size: $font-size * 0.8;
+    white-space: normal; 
+  }
 }
