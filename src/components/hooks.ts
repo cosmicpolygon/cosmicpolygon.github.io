@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 export function useCurrentHeight(): number {
-  let height: number;
+  let height = typeof window !== 'undefined' ? window.innerHeight : 0;
 
   useEffect(() => {
     let timeoutId = null;
@@ -9,8 +9,6 @@ export function useCurrentHeight(): number {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => height = window.innerHeight, 256);
     };
-    
-    height = window.innerHeight;
 
     window.addEventListener('resize', resize);
 
