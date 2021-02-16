@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
 import { useCurrentHeight } from "./hooks";
@@ -6,16 +6,15 @@ import { useCurrentHeight } from "./hooks";
 import * as styles from './header.module.scss';
 
 const Header = () => {
-  let height: number;
+  const [height, setHeight] = useState(typeof window !== 'undefined' ? window.innerHeight : 0);
 
   useEffect(() => {
     let timeoutId = null;
     const resize = () => {
       clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => height = window.innerHeight, 256);
+      timeoutId = setTimeout(() => setHeight(window.innerHeight), 256);
     };
 
-    resize();
     window.addEventListener('resize', resize);
 
     return () => {
