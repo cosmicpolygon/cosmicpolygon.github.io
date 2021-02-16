@@ -45,6 +45,10 @@
     height: $logo-height;
     width: $logo-width;
   }
+
+  @media screen and (max-width: responsive.$breakpoint-small) {
+    transform: translate(-50%, -50%);
+  }
 }
 
 .title {
@@ -58,5 +62,10 @@
   @media screen and (max-width: responsive.$breakpoint-medium) {
     font-size: $font-size * 0.8;
     white-space: normal; 
+    transform: translate(-50%, 0);
+  }
+
+  @media screen and (max-width: responsive.$breakpoint-small) {
+    display: none;
   }
 }
