@@ -9,7 +9,7 @@ $logo-width: 288px;
 @mixin piece($file-name) {
   position: absolute;
 
-  background: url('../images/#{$file-name}.svg');
+  background: url('../images/logo/#{$file-name}.svg');
   background-size: $logo-width $logo-height;
   height: $logo-height;
   transition: all anim.$logo-time ease-out;
@@ -26,14 +26,14 @@ $logo-width: 288px;
 
   &:hover,
   &:active {
-    .c { transform: translate(-4%, -6%); }
-    .p { transform: translate(4%, 4%); }
+    .c { transform: translate(-4%, 4%); opacity: 1; }
+    .p { transform: translate(4%, 4%); opacity: 1; }
 
-    .topShade { transform: translate(0%, -4%); }
-    .leftShade { transform: translate(-4%, 4%); }
-    .rightShade { transform: translate(4%, 4%); }
+    .topShade { transform: translate(0%, -2%); opacity: 0; }
+    .leftShade { transform: translate(-4%, 4%); opacity: 0; }
+    .rightShade { transform: translate(4%, 4%); opacity: 0; }
     
-    .top { transform: translate(0%, -4%); }
+    .top { transform: translate(0%, -2%); }
     .left { transform: translate(-4%, 4%); }
     .right { transform: translate(4%, 4%); }
   }
@@ -43,11 +43,11 @@ $logo-width: 288px;
   }
 }
 
-.c { @include piece('logo-c'); }
-.p { @include piece('logo-p'); }
-.topShade { @include piece('logo-top-shade'); }
-.leftShade { @include piece('logo-left-shade'); }
-.rightShade { @include piece('logo-right-shade'); }
+.c { @include piece('logo-c'); opacity: 0.6; }
+.p { @include piece('logo-p'); opacity: 0.6; }
+.topShade { @include piece('logo-top-shade'); opacity: 1; }
+.leftShade { @include piece('logo-left-shade'); opacity: 1; }
+.rightShade { @include piece('logo-right-shade'); opacity: 1; }
 .top { @include piece('logo-top'); }
 .left { @include piece('logo-left'); }
 .right { @include piece('logo-right'); }
