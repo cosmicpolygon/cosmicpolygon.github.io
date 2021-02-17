@@ -16,10 +16,12 @@
 }
 
 .title {
-  @include mixins.center(25%);
-  
-  $hero-font-size: 6em;
+  $hero-font-size: 96px;
 
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 8%);
   white-space: nowrap;
 
   a {
@@ -27,14 +29,18 @@
     font-size: $hero-font-size;
     text-decoration: none;
     transition: all anim.$active-time ease-out;
+
+    @media screen and (max-width: responsive.$breakpoint-medium) {
+      display: none;
+    }
   }
 
   p {
     font-family: type.$primary;
-    font-size: $hero-font-size / 4;
+    font-size: 22px;
   }
 
   @media screen and (max-width: responsive.$breakpoint-medium) {
-    display: none;
+    transform: translate(-50%, 360%);
   }
 }

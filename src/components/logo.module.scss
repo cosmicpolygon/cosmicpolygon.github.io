@@ -17,12 +17,14 @@ $logo-width: 288px;
 }
 
 .container {
+  // TODO add intro animation? fade in/slide up
   left: 50%;
   position: absolute;
   top: 50%;
   height: $logo-height;
   width: $logo-width;
   transform: translate(-50%, -100%);
+  // transition: all anim.$logo-time ease-out; TODO figure out timing
 
   &:hover,
   &:active {
