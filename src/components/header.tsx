@@ -25,7 +25,10 @@ const Header = () => {
   return (
     <header className={styles.container} style={{ height }}>
       <Logo />
-      <Link className={styles.title} to="/">COSMIC POLYGON</Link>
+      <div className={styles.title}>
+        <Link to="/">COSMIC POLYGON</Link>
+        <p>DESIGN, UX, & ILLUSTRATION</p>
+      </div>
     </header>
   );
 };

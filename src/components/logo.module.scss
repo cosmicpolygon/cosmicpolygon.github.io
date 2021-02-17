@@ -38,7 +38,7 @@ $logo-width: 288px;
     .right { transform: translate(4%, 4%); }
   }
 
-  @media screen and (max-width: responsive.$breakpoint-small) {
+  @media screen and (max-width: responsive.$breakpoint-medium) {
     transform: translate(-50%, -50%);
   }
 }

@@ -9,12 +9,6 @@
   height: 100vh;
   text-align: center;
 
-  a {
-    color: color.$primary;
-    text-decoration: none;
-    transition: all anim.$active-time ease-out;
-  }
-
   a:active,
   a:hover {
     color: color.$secondary;
@@ -23,17 +17,24 @@
 
 .title {
   @include mixins.center(25%);
+  
+  $hero-font-size: 6em;
 
-  $font-size: 6em;
-
-  font-size: $font-size;
   white-space: nowrap;
 
-  @media screen and (max-width: responsive.$breakpoint-medium) {
-    white-space: normal;
+  a {
+    color: color.$primary;
+    font-size: $hero-font-size;
+    text-decoration: none;
+    transition: all anim.$active-time ease-out;
   }
 
-  @media screen and (max-width: responsive.$breakpoint-small) {
+  p {
+    font-family: type.$primary;
+    font-size: $hero-font-size / 4;
+  }
+
+  @media screen and (max-width: responsive.$breakpoint-medium) {
     display: none;
   }
 }
