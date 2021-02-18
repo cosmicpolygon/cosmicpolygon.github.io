@@ -1,5 +1,5 @@
 import React from "react";
-import { pages } from "../pages/types";
+import { pages } from "../common/types";
 
 import * as styles from './footer.module.scss';
 
