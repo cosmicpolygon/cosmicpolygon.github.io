@@ -3,9 +3,10 @@ import React from "react";
 import About from "../components/about";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { pages } from "./types";
 
 const IndexPage = () => (
-  <Layout>
+  <Layout page={pages.ABOUT}>
     <SEO title="About Me" />
     <About />
   </Layout>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Design & Illustration by Christopher Peters`,
+    title: `Design, UX, & Illustration`,
     description: `Hello, worlds!`,
     author: `@cosmicpolygon`,
   },
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cosmic Polygon | Design & Illustration by Christopher Peters`,
+        name: `Cosmic Polygon | Design, UX, & Illustration by Christopher Peters`,
         short_name: `cosmicpolygon`,
         start_url: `/`,
         background_color: `#202344`,
