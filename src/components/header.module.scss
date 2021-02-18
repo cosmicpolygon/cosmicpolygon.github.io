@@ -30,5 +30,11 @@
     a:hover {
       color: color.$primary;
     }
+
+    .home {
+      &.isHome {
+        display: none;
+      }
+    }
   }
 }

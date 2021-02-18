@@ -27,7 +27,7 @@ const Layout = ({ children, page }) => {
 
   return (
     <>
-      <Header />
+      <Header page={page} />
       <main>{children}</main>
       <Footer page={page} />
     </>
