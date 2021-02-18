@@ -1,46 +1,34 @@
 @use 'animation' as anim;
 @use 'colors' as color;
-@use 'mixins' as mixins;
-@use 'responsive' as responsive;
 @use 'typography' as type;
 
 .container {
-  font-family: type.$secondary;
-  height: 100vh;
-  text-align: center;
+  $margins: 24px;
 
-  a:active,
-  a:hover {
-    color: color.$secondary;
-  }
-}
+  height: $margins;
+  position: sticky;
+  margin: $margins 0;
+  top: $margins;
+  z-index: 1;
 
-.title {
-  $hero-font-size: 96px;
+  nav {
+    float: right;
+    font-family: type.$secondary;
+    list-style: none;
 
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, 8%);
-  white-space: nowrap;
-
-  a {
-    color: color.$primary;
-    font-size: $hero-font-size;
-    text-decoration: none;
-    transition: all anim.$active-time ease-out;
-
-    @media screen and (max-width: responsive.$breakpoint-medium) {
-      display: none;
+    span {
+      margin-right: $margins;
     }
-  }
 
-  p {
-    font-family: type.$primary;
-    font-size: 22px;
-  }
+    a {
+      color: color.$secondary;
+      text-underline-offset: 0.2em;
+      transition: all anim.$link-active-time ease-out;
+    }
 
-  @media screen and (max-width: responsive.$breakpoint-medium) {
-    transform: translate(-50%, 360%);
+    a:active,
+    a:hover {
+      color: color.$primary;
+    }
   }
 }

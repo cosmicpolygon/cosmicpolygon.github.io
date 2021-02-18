@@ -1,8 +1,20 @@
+@use 'responsive' as responsive;
 @use 'typography' as type;
 
 .container {
   font-family: type.$primary;
   font-size: 22px;
-  margin: 32px;
+  margin: 32px 0;
   text-align: center;
+
+  @media screen and (max-width: responsive.$breakpoint-medium) {
+    font-size: 14px;
+    margin: 16px 0;
+  }
+}
+
+.home {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
