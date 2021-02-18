@@ -17,13 +17,14 @@ $logo-width: 288px;
 
 .container {
   // TODO add intro animation? fade in/slide up
+
   left: 50%;
   position: absolute;
   top: 50%;
   height: $logo-height;
   width: $logo-width;
   transform: translate(-50%, -100%);
-  // transition: all anim.$logo-time ease-out; TODO figure out timing
+  transition: all anim.$logo-time ease-out;
 
   &:hover,
   &:active {
@@ -41,6 +42,10 @@ $logo-width: 288px;
 
   @media screen and (max-width: responsive.$breakpoint-medium) {
     transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: responsive.$breakpoint-small) {
+    transform: translate(-50%, -50%) scale(0.86, 0.86);
   }
 }
 
