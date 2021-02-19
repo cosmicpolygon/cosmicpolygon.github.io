@@ -23,7 +23,7 @@ $logo-width: 288px;
   top: 50%;
   height: $logo-height;
   width: $logo-width;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%) scale(0.86);
   transition: all anim.$logo-time ease-out;
 
   &:hover,
@@ -40,12 +40,16 @@ $logo-width: 288px;
     .right { transform: translate(4%, 4%); }
   }
 
+  @media screen and (min-width: responsive.$breakpoint-xlarge + 1) {
+    transform: translate(-50%, -100%) scale(1);
+  }
+
   @media screen and (max-width: responsive.$breakpoint-medium) {
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -75%) scale(0.86);
   }
 
   @media screen and (max-width: responsive.$breakpoint-small) {
-    transform: translate(-50%, -50%) scale(0.86, 0.86);
+    transform: translate(-50%, -50%) scale(0.86);
   }
 }
 

@@ -26,8 +26,8 @@ const Home = () => {
     <div className={styles.container} style={{ height }}>
       <Logo />
       <div className={styles.title}>
-        <Link to="/">COSMIC POLYGON</Link>
-        <p>DESIGN, UX, & ILLUSTRATION</p>
+        <h1>COSMIC POLYGON</h1>
+        <h3>DESIGN, UX, & ILLUSTRATION</h3>
       </div>
     </div>
   );

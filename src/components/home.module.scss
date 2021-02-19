@@ -18,36 +18,49 @@
 }
 
 .title {
-  $hero-font-size: 96px;
-
   left: 50%;
   position: absolute;
   top: 50%;
   text-align: center;
-  transform: translate(-50%, 8%);
+  transform: translate(-50%, 0);
   white-space: nowrap;
 
-  a {
+  h1 {
     color: color.$primary;
-    font-size: $hero-font-size;
+    font-family: type.$secondary;
+    font-size: 84px;
+    font-weight: 400;
     text-decoration: none;
     transition: all anim.$hero-active-time ease-out;
+
+    @media screen and (min-width: responsive.$breakpoint-xlarge + 1) {
+      font-size: 96px;
+    }
 
     @media screen and (max-width: responsive.$breakpoint-medium) {
       display: none;
     }
   }
 
-  p {
+  h3 {
     font-family: type.$primary;
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 300;
+
+    @media screen and (max-width: responsive.$breakpoint-medium) {
+      font-size: 26px;
+    }
 
     @media screen and (max-width: responsive.$breakpoint-small) {
       display: none;
     }
   }
 
+  @media screen and (min-width: responsive.$breakpoint-xlarge + 1) {
+    transform: translate(-50%, 8%);
+  }
+
   @media screen and (max-width: responsive.$breakpoint-medium) {
-    transform: translate(-50%, 360%);
+    transform: translate(-50%, 172%);
   }
 }
