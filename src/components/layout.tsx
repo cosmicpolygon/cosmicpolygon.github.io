@@ -26,11 +26,11 @@ const Layout = ({ children, page }) => {
   `)
 
   return (
-    <>
+    <div className={'content'}>
       <Header page={page} />
       <main>{children}</main>
       <Footer page={page} />
-    </>
+    </div>
   )
 }
 
