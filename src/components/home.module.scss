@@ -51,7 +51,8 @@
       font-size: 26px;
     }
 
-    @media screen and (max-width: responsive.$breakpoint-small) {
+    @media screen and (max-width: responsive.$breakpoint-small),
+      (max-height: responsive.$breakpoint-small) {
       display: none;
     }
   }

@@ -48,7 +48,8 @@ $logo-width: 288px;
     transform: translate(-50%, -75%) scale(0.86);
   }
 
-  @media screen and (max-width: responsive.$breakpoint-small) {
+  @media screen and (max-width: responsive.$breakpoint-small),
+    (max-height: responsive.$breakpoint-small) {
     transform: translate(-50%, -50%) scale(0.86);
   }
 }

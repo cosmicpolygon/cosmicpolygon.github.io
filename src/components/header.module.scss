@@ -1,5 +1,6 @@
 @use 'animation' as anim;
 @use 'colors' as color;
+@use 'responsive' as responsive;
 @use 'typography' as type;
 
 .container {
@@ -12,16 +13,23 @@
   z-index: 1;
 
   nav {
-    float: right;
+    display: flex;
+    flex-flow: row;
     font-family: type.$secondary;
     list-style: none;
 
-    span {
-      margin-right: $margins;
+    .col {
+      display: flex;
+      flex: 1;
+
+      &:last-child {
+        justify-content: flex-end;
+      }
     }
 
     a {
       color: color.$secondary;
+      padding: 12px;
       text-underline-offset: 0.2em;
       transition: all anim.$link-active-time ease-out;
     }
@@ -35,6 +43,26 @@
       &.isHome {
         display: none;
       }
+    }
+
+    @media screen and (max-width: responsive.$breakpoint-small),
+      (max-height: responsive.$breakpoint-small) {
+      display: none;
+    }
+  }
+
+  .mobileMenuButton {
+    display: none;
+  
+    button {
+      
+    }
+
+    @media screen and (max-width: responsive.$breakpoint-small),
+      (max-height: responsive.$breakpoint-small) {
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-end;
     }
   }
 }

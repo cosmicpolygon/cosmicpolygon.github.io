@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import * as styles from './logo.module.scss';
 
 const Logo = () => (
-  <div className={styles.container}>
+  <div className={styles.container} title="COSMIC POLYGON">
     <div className={styles.right}></div>
     <div className={styles.left}></div>
     <div className={styles.top}></div>
