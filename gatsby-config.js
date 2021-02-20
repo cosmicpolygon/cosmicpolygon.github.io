@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Design, UX, & Illustration`,
+    title: `Cosmic Polygon`,
     description: `Hello, worlds!`,
     author: `@cosmicpolygon`,
   },

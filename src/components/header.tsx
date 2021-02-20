@@ -9,7 +9,12 @@ const Header = ({ page }) => (
   <header className={styles.container}>
     <nav>
       <div className={styles.col}>
-        <Link to="/" className={`${styles.home} ${page === pages.HOME ? styles.isHome : ''}`} />
+        <Link
+          to="/"
+          className={`${styles.home} ${page === pages.HOME ? styles.isHome : ''}`}
+          title="Home"
+          role="img"
+          aria-label="Cosmic Polygon monogram logo link" />
       </div>
       <div className={styles.col}>
         <Link to="/projects">PROJECTS</Link>

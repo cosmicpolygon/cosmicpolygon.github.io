@@ -7,7 +7,7 @@ import { pages } from "../common/types";
 
 const IndexPage = () => (
   <Layout page={pages.HOME}>
-    <SEO title="Cosmic Polygon" />
+    <SEO title="Design, UX, & Illustration" />
     <Home />
   </Layout>
 );
