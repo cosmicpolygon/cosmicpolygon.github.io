@@ -24,7 +24,10 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-/* svg home logo hover */
+/**
+ * svg home logo hover
+ * TODO this sucks, try moving to :global again or making it a pure js component
+ */
 .headerHomeIcon .monogram {
   fill: rgba(255, 255, 255, 0.6);
   transition: all 128ms ease-out;
