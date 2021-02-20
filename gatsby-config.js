@@ -19,6 +19,14 @@ module.exports = {
         implementation: require("sass")
       }
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    },
     'gatsby-transformer-typescript-css-modules',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

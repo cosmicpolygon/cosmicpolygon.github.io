@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { pages } from "../common/types";
+import Icon from '../images/logo.inline.svg';
 
 import * as styles from './header.module.scss';
 
@@ -12,9 +13,9 @@ const Header = ({ page }) => (
         <Link
           to="/"
           className={`${styles.home} ${page === pages.HOME ? styles.isHome : ''}`}
-          title="Home"
-          role="img"
-          aria-label="Cosmic Polygon monogram logo link" />
+          title="Home">
+          <Icon className="headerHomeIcon" />
+        </Link>
       </div>
       <div className={styles.col}>
         <Link to="/projects">PROJECTS</Link>

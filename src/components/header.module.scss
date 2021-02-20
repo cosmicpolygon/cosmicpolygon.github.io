@@ -29,29 +29,29 @@
       &:last-child {
         justify-content: flex-end;
         margin-right: $margins;
+
+        a {
+          color: color.$secondary;
+          padding: 12px;
+          text-underline-offset: 0.2em;
+          transition: all anim.$link-active-time ease-out;
+        }
+    
+        a:active,
+        a:hover {
+          color: color.$primary;
+        }
       }
     }
 
-    a {
-      color: color.$secondary;
-      padding: 12px;
-      text-underline-offset: 0.2em;
-      transition: all anim.$link-active-time ease-out;
-    }
-
-    a:active,
-    a:hover {
-      color: color.$primary;
-    }
-
     .home {
-      $logo-height: 41.25px;
+      $logo-height: 41px;
       $logo-width: 36px;
 
-      background: url('../images/logo.svg');
-      background-size: $logo-width $logo-height;
-      height: $logo-height;
-      width: $logo-width;
+      svg {
+        height: $logo-height;
+        width: $logo-width;
+      }
 
       &.isHome {
         display: none;
@@ -68,7 +68,7 @@
     display: none;
   
     button {
-
+      // todo
     }
 
     @media screen and (max-width: responsive.$breakpoint-small),

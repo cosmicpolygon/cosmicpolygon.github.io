@@ -23,6 +23,18 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+/* svg home logo hover */
+.headerHomeIcon .monogram {
+  fill: rgba(255, 255, 255, 0.6);
+  transition: all 128ms ease-out;
+}
+.headerHomeIcon:active .monogram,
+.headerHomeIcon:hover .monogram {
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+/* sticky footer */
 .content {
   display: flex;
   flex-direction: column;
@@ -31,6 +43,7 @@ body {
 main {
   flex: 1 0 auto;
 }
+
 article,
 aside,
 details,
