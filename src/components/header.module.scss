@@ -1,12 +1,13 @@
-@use 'animation' as anim;
-@use 'colors' as color;
-@use 'responsive' as responsive;
-@use 'typography' as type;
+@use '../common/_animation' as anim;
+@use '../common/_colors' as color;
+@use '../common/_responsive' as responsive;
+@use '../common/_typography' as type;
 
 .container {
   $margins: 12px;
 
   background-color: rgba(color.$quaternary, 0.8);
+  box-shadow: 0 2px 4px 2px rgba(color.$quaternary, 0.68);
   position: sticky;
   padding: $margins 0;
   top: 0;
@@ -23,7 +24,7 @@
       flex: 1;
 
       &:first-child {
-        margin-left: $margins * 2;
+        margin-left: $margins;
       }
 
       &:last-child {

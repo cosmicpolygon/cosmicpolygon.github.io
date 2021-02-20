@@ -1,5 +1,5 @@
-@use 'colors' as color;
-@use 'typography' as type;
+@use '../common/_colors' as color;
+@use '../common/_typography' as type;
 
 html {
   -ms-text-size-adjust: 100%;

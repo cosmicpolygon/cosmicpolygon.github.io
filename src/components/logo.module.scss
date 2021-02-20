@@ -1,6 +1,6 @@
-@use 'animation' as anim;
-@use 'colors' as color;
-@use 'responsive' as responsive;
+@use '../common/_animation' as anim;
+@use '../common/_colors' as color;
+@use '../common/_responsive' as responsive;
 
 $logo-height: 330px;
 $logo-width: 288px;

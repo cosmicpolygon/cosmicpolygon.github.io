@@ -1,7 +1,7 @@
-@use 'animation' as anim;
-@use 'colors' as color;
-@use 'responsive' as responsive;
-@use 'typography' as type;
+@use '../common/_animation' as anim;
+@use '../common/_colors' as color;
+@use '../common/_responsive' as responsive;
+@use '../common/_typography' as type;
 
 .container {
   font-family: type.$secondary;
@@ -30,8 +30,6 @@
     font-family: type.$secondary;
     font-size: 84px;
     font-weight: 400;
-    text-decoration: none;
-    transition: all anim.$hero-active-time ease-out;
 
     @media screen and (min-width: responsive.$breakpoint-xlarge + 1) {
       font-size: 96px;

@@ -1,5 +1,5 @@
-@use 'responsive' as responsive;
-@use 'typography' as type;
+@use '../common/_responsive' as responsive;
+@use '../common/_typography' as type;
 
 .container {
   flex-shrink: 0;
