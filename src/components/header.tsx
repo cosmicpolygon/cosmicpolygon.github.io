@@ -9,13 +9,11 @@ const Header = ({ page }) => (
   <header className={styles.container}>
     <nav>
       <div className={styles.col}>
-        <div className={`${styles.home} ${page === pages.HOME ? styles.isHome : ''}`}>
-          <Link to="/">Home</Link>
-        </div>
+        <Link to="/" className={`${styles.home} ${page === pages.HOME ? styles.isHome : ''}`} />
       </div>
       <div className={styles.col}>
-        <span><Link to="/projects">PROJECTS</Link></span>
-        <span><Link to="/about">ABOUT ME</Link></span>
+        <Link to="/projects">PROJECTS</Link>
+        <Link to="/about">ABOUT ME</Link>
       </div>
     </nav>
     <div className={styles.mobileMenuButton}>menu</div>

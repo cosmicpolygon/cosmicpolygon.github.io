@@ -4,12 +4,12 @@
 @use 'typography' as type;
 
 .container {
-  $margins: 24px;
+  $margins: 12px;
 
-  height: $margins;
+  background-color: rgba(color.$quaternary, 0.8);
   position: sticky;
-  margin: $margins 0;
-  top: $margins;
+  padding: $margins 0;
+  top: 0;
   z-index: 1;
 
   nav {
@@ -22,8 +22,13 @@
       display: flex;
       flex: 1;
 
+      &:first-child {
+        margin-left: $margins * 2;
+      }
+
       &:last-child {
         justify-content: flex-end;
+        margin-right: $margins;
       }
     }
 
@@ -40,6 +45,14 @@
     }
 
     .home {
+      $logo-height: 41.25px;
+      $logo-width: 36px;
+
+      background: url('../images/logo.svg');
+      background-size: $logo-width $logo-height;
+      height: $logo-height;
+      width: $logo-width;
+
       &.isHome {
         display: none;
       }
@@ -55,7 +68,7 @@
     display: none;
   
     button {
-      
+
     }
 
     @media screen and (max-width: responsive.$breakpoint-small),
