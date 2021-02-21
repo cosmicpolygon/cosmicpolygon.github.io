@@ -6,6 +6,7 @@
   text-align: center;
 
   h1 {
+    $size-small: 64px;
     $size-medium: 72px;
     $size-large: 84px;
     $size-xlarge: 96px;
@@ -24,6 +25,11 @@
     @media screen and (max-width: responsive.$breakpoint-medium) {
       font-size: $size-medium;
       margin: $size-medium 0;
+    }
+    
+    @media screen and (max-width: responsive.$breakpoint-small) {
+      font-size: $size-small;
+      margin: $size-small 0;
     }
   }  
 }
