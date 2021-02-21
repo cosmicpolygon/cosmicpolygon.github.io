@@ -4,51 +4,14 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { pages } from "../common/types";
 
-import '../common/page.scss'
+import styles from  '../common/page.module.scss';
 
 const IndexPage = () => (
   <Layout page={pages.PROJECTS}>
     <SEO title="Projects" />
-    <h1>PROJECTS</h1>
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti impedit odit modi porro nostrum, perspiciatis, quasi id, quos tempore dicta. Est ipsa maiores laborum corrupti velit eveniet exercitationem itaque?</p>
+    <div className={styles.container}>
+      <h1>PROJECTS</h1>
+      <p>Coming Soon...</p>
     </div>
   </Layout>
 );
