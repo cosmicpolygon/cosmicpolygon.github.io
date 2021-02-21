@@ -30,13 +30,14 @@
 
     .col {
       display: flex;
-      flex: 1;
 
       &:first-child {
+        flex: 1;
         margin-left: $margins;
       }
 
       &:last-child {
+        flex: 2;
         justify-content: flex-end;
         margin-right: $margins;
 
