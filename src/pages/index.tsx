@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Logo from "../components/logo";
-import Background from "../components/background";
+// import Background from "../components/background";
 import { pages } from "../common/types";
 
 import styles from '../common/index.module.scss';
