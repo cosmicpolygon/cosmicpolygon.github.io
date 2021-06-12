@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cosmic Polygon | Design, UX, & Illustration by Christopher Peters`,
+        name: `Cosmic Polygon | All Things Pixel & Pencil`,
         short_name: `cosmicpolygon`,
         start_url: `/`,
         background_color: `#202344`,

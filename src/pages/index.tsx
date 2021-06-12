@@ -31,13 +31,13 @@ const IndexPage = (): JSX.Element => {
 
   return (
     <Layout page={pages.HOME}>
-      <SEO title="Design, UX, & Illustration" />
+      <SEO title="All Things Pixel & Pencil" />
       <div className={styles.container} style={{ height }}>
         {/* <Background width={width} height={height} /> */}
         <Logo />
         <div className={styles.title}>
           <h1>COSMIC POLYGON</h1>
-          <h3>DESIGN, UX, & ILLUSTRATION</h3>
+          <h3>ALL THINGS PIXEL & PENCIL</h3>
         </div>
       </div>
     </Layout>
